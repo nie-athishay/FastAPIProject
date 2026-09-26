@@ -33,12 +33,12 @@ def get_users_collection(db: Database = Depends(get_db)) -> Collection:
     return db["users"]
 
 
-def get_servic_request_collection(db: Database = Depends(get_db)) -> Collection:
+def get_categories_collection(db: Database = Depends(get_db)) -> Collection:
     """Provides access to the 'categories' collection."""
     return db["categories"]
 
 
-def get_tickets_collection(db: Database = Depends(get_db)) -> Collection:
+def get_service_request_collection(db: Database = Depends(get_db)) -> Collection:
     """Provides access to the 'tickets' collection."""
     return db["tickets"]
 
